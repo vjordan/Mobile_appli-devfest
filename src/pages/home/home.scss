@@ -1,0 +1,13 @@
+page-home {
+    .button {
+        background-color: color($colors, secondary);
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    a {
+        display: block;
+        margin : auto;
+     }
+}

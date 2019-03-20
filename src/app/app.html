@@ -1,0 +1,27 @@
+<ion-menu [content]="content" id="menu1" side="right">
+
+  <ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button ion-item menuClose="menu1" (click)="openSessionsPage()" detail-none>
+        Sessions
+      </button>
+      <button ion-item menuClose="menu1" (click)="openPresentateursPage()" detail-none>
+        Présentateurs
+      </button>
+      <button ion-item menuClose="menu1" (click)="openTelephonePage()" detail-none>
+        Téléphone
+      </button>
+      <button ion-item menuClose="menu1" detail-none>
+        Fermer Menu
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+<ion-nav [root]="rootPage" #content ></ion-nav>

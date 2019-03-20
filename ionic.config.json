@@ -1,0 +1,7 @@
+{
+  "name": "projetDevfest",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

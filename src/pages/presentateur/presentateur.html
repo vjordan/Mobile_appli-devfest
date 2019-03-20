@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Présentateur
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1 class="presentateurName">{{presentateur.name}}</h1>
+  <div><button ion-button (click)="addContact()">  <ion-icon name="person-add"></ion-icon> </button></div>
+  <img width="200" height="200" [src]="'https://devfest.gdgnantes.com/'+ presentateur.photoUrl">
+  <p class="presentateurPageParts">Biographie :</p>
+  <p class="presentateurBio">{{presentateur.bio}}</p>
+  <p class="presentateurPageParts">Ses Présentations :</p>
+  <ion-list>
+    <button ion-item *ngFor="let session of sessions" (click)="openSessionPage(session)">
+      <ion-icon name="arrow-forward" item-end></ion-icon>
+      {{session.title}}
+    </button>
+  </ion-list>
+</ion-content>
